@@ -2,9 +2,23 @@
 <html lang="en">
 <head>
     <style>
-        td#texto {font-size: 15px;text-align: end;}
+        td#titulo{text-align: left;font-size: 25px; padding: 25px 25px 25px 70px;}
 
+        button{background-color: blue;padding: 10px 50px; 
+            margin: 15px; border-radius: 5px; color: white;}
+
+        input[type=text], select,input[type=date]{
+            padding: 5px 15px; margin: 8px 0; display: inline-block; 
+            border: 1px solid grey; border-radius: 5px; box-sizing: border-box; 
+            box-shadow: 2px 2px 5px lightblue;}
+
+        table{width: 80%; margin: auto; border: 10px solid red;padding: 40px; }
+
+        td#texto{width: 15%; padding: 10px; text-align: right;}
+        
+        
     </style>
+  
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,44 +28,45 @@
     <table>
 <tr>
     <td id="texto">E-mail*</td>
-    <td id="campos"> <input></td>
+    <td id="campos"> <input type="text"size="30"></td>
     <td id="texto"> Crie uma senha*</td>
-    <td id="campos"> <input></td>
+    <td id="campos"> <input type="text" size="30"></td>
 </tr>
 
 <tr>
     <td id="texto"> Repetir e-mail*</td>
-    <td id="campos"> <input></td>
+    <td id="campos"> <input type="text" size="30"></td>
     <td id="texto">Repetir senha *</td>
-    <td id="campos"> <input></td>
+    <td id="campos"> <input type="text" size="30"></td>
 </tr>
 
 <tr>
-    <td id="texto">Dados cadastrais</td>
-    <td id="campos"></td>
-    <td id="texto">Endereço de entrega</td>
-    <td id="campos"> <input</td>
+    <td id="titulo"colspan="2" >Dados cadastrais</td>
+    
+    <td id="titulo" colspan="2">Endereço de entrega</td>
+    <td></td>
 </tr>
 
 <tr>
-    <td><input type="radio" name="tpsessoa" value="PS"> Pessoa fisica</td>
-    <td><input type="radio" name="tpsessoa" value="PJ"> Pessoa juridica</td>
+    <td></td>
+    <td><input type="radio" name="tpsessoa" value="PS"> Pessoa fisica <input type="radio" name="tpsessoa" value="PJ"> Pessoa juridica</td>
     <td id="texto"> CEP</td>
     <td id="campos"> <input type="text"></td>
 </tr>
 
 <tr>
+
     <td id="texto"> Nome*</td>
-    <td id="campos"> <input type="text"></td>
+    <td id="campos"> <input type="text" size="30"></td>
     <td id="texto">Rua</td>
-    <td id="campos"> <input type="text"></td>
+    <td id="campos"> <input type="text" size="30"></td>
 </tr>
 
 <tr>
     <td id="texto">Sobrenome*</td>
-    <td id="campos"> <input type="text"></td>
+    <td id="campos"> <input type="text" size="30"></td>
     <td id="texto">Numero</td>
-    <td id="campos"> <input type="text"></td>
+    <td id="campos"> <input type="text" size="10"></td>
 </tr>
 
 <tr>
@@ -66,10 +81,11 @@
 </tr>
 
 <tr>
-    <td id="texto"CPF*<</td>
+    <td id="texto">CPF*</td>
     <td id="campos"> <input type="text"></td>
     <td id="texto">Complemento</td>
-    <td id="campos"> <input type="text"></td>
+    <td id="campos"> <input type="text" size="15"></td>
+
 </tr>
 
 <tr>
@@ -95,13 +111,14 @@
 
 <tr>
     <td id="texto"></td>
-    <td id="texto"><input type="checkbox">Receber ofertas e novidades por e-mail</td>
+    <td id="campo"><input type="checkbox">Receber ofertas e novidades por e-mail</td>
     <td id="texto">Estado</td>
-    <td id="campos"> <input type="text"></td>
+    <td id="campos"> <input type="text" size="5"></td>
 </tr>
 
 <tr>
-    <td><button class="button">Cadastrar ></button></td>
+    <td></td>
+    <td><button class="button">Cadastrar </button></td>
 </tr>
 
 </table>
